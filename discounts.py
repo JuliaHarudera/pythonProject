@@ -1,3 +1,8 @@
+import logging
+class InvalidPriceError(Exception):
+    pass
+
+
 class Discount:
     def discount(self, total):
         return total
