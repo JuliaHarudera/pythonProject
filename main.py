@@ -1,6 +1,6 @@
 import logging
 from dishes import Dish
-from Menu import MenuCategory
+from menu import MenuCategory
 from orders import Order
 from discounts import RegularDiscount, SilverDiscount, GoldDiscount
 from clients import Client

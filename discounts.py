@@ -1,4 +1,6 @@
 import logging
+
+
 class InvalidPriceError(Exception):
     pass
 

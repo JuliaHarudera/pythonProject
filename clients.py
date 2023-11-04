@@ -1,5 +1,6 @@
 from discounts import Discount
 
+
 class Client:
     def __init__(self, name, discount):
         self.name = name
