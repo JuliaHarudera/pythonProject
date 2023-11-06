@@ -19,3 +19,15 @@ class Cart:
             return self
         else:
             raise TypeError("Додавання підтримується лише для об'єктів класу Cart.")
+
+    def __iter__(self):
+        self.current_index = 0
+        return self
+
+    def __next__(self):
+        if self.current_index < len(self.items):
+            item = self.add_item(self.current_index)
+            self.current_index =+ 1
+            return item
+        else:
+            raise StopIteration
