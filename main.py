@@ -43,6 +43,15 @@ if __name__ == "__main__":
     print(f"{client_silver.name}: Загальна вартість замовлення: ${total_silver:.2f}")
     print(f"{client_gold.name}: Загальна вартість замовлення: ${total_gold:.2f}")
 
+    print("Категорія страв:")
+    for item in category:
+        print(item)
+    total_dishes = len(category)
+    print(f"\nЗагальна кількість страв в категорії: {total_dishes}")
+
+    first_dish = category[0]
+    print(f"\nПерша страва в категорії: {first_dish}")
+
     print("Кошик:")
     for item in cart:
         print(item)
